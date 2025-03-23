@@ -82,3 +82,22 @@ void XSTRING__StripWhiteSpace(std::string &str)
     }
 }
                                                             
+
+
+
+
+void   XSTRING__Join(std::vector<std::string> &vStr, std::string &str,
+		                                             char        chr)
+{
+    std::ostringstream oss;
+    std::vector<std::string>::iterator it;
+
+    if (vStr.size())
+    {
+        for (it = vStr.begin(); it != vStr.end(); ++it)
+        {
+            oss << (*it) << chr;
+        }
+        str = oss.str();
+    }
+}

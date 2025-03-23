@@ -25,6 +25,20 @@ int unsigned XSTRING__Split(std::vector<std::string> &vStr, std::string &str,
 
 
 /**
+ * @brief join multiple strings with a delimiter character between them.
+ * 
+ * @param vStr 
+ * @param str 
+ * @param chr 
+ * @return 
+ */
+void  XSTRING__Join(std::vector<std::string> &vStr, std::string &str,
+		                                            char        chr);
+
+
+
+
+/**
  * @brief Remove all white spaces in a string.
  * 
  * @param str 
